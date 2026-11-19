@@ -1,11 +1,11 @@
 PYTHON ?= python3
 MAP ?= *.txt
 
-install:
-	$(PYTHON) -m pip install flake8 mypy
-
 run:
 	$(PYTHON) main.py $(MAP)
+
+install:
+	$(PYTHON) -m pip install flake8 mypy
 
 debug:
 	$(PYTHON) -m pdb main.py $(MAP)
